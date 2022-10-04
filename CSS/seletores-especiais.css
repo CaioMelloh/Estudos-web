@@ -1,0 +1,15 @@
+div p{
+    color: #dd0;
+}
+p{
+    color: #f00;
+}
+div > p{
+    color: purple;
+}
+div + p{
+    color: #0d0;
+}
+div ~ p{
+    font-family: verdana;
+}

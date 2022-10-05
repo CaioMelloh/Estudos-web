@@ -1,11 +1,15 @@
-table{
+table, td, th{
+    border: 1px solid #000;
+    height: 20px;
     width: 400px;
-    table-layout: fixed;
-    empty-cells: show;
 }
-/*.zebra{
-    background-color: #eee;
-}*/
-tr:nth-child(even){
-    background-color: #eee;
+th{
+    background-color: #0d4;
+    height: 32px;
+}   
+td{
+    text-align: center;
+}
+tr:nth-child(odd){
+    background-color: aquamarine;
 }

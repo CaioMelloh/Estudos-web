@@ -1,0 +1,11 @@
+table{
+    width: 400px;
+    table-layout: fixed;
+    empty-cells: show;
+}
+/*.zebra{
+    background-color: #eee;
+}*/
+tr:nth-child(even){
+    background-color: #eee;
+}

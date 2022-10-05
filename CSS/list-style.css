@@ -1,0 +1,15 @@
+/*ul, ol{
+    list-style-image:  url(img/Sem\ título.png);
+}*/
+ol{
+    list-style: none;
+    padding: 0px;
+}
+li{
+    height:40px;
+    width: 200px;
+    background-color: #d40;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

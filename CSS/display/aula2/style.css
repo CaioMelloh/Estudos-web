@@ -1,0 +1,36 @@
+div{  
+    height: 200px;
+    width: 200px;
+    background-color: #0f8;
+    border: 1px solid #000;
+    display: table-cell;
+    text-align: center;
+    /*vertical-align: middle;*/
+    line-height: 200px;
+
+
+}
+ol, li, ul{
+    height: 10px;
+    width: 400px;
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+    border: 1px solid #000;
+}
+ol{
+    display: table;
+    margin-top: 12px;
+}
+ul{
+    display: table-row;
+}
+li{
+    display: table-cell;
+    height: 20px;
+
+}
+.titulo{
+    background-color: #048;
+    color: #fff;
+}

@@ -1,0 +1,27 @@
+ ol, li, div{
+   margin: 0;
+   padding: 0;
+   border: 1px solid #000;
+}
+ol{
+    list-style: none;
+    display: table-row;
+    
+}
+li{
+    display: table-cell;
+    padding: 10px;
+}
+div{
+    display: table;
+    height: 100px;
+    padding: 10px;
+    width: 300px;
+   
+}
+.titulo{
+    background-color: #028;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}

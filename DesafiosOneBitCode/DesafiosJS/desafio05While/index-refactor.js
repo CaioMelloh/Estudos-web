@@ -1,8 +1,8 @@
-let rocketName = prompt("Qual o nome da sua nave?: ");
-
 let answer;
 
 let dobraEspacial = 0;
+
+let rocketName = prompt("Qual o nome da sua nave?: ");
 
 let question = prompt("Deseja entrar na dobra espacial?\n1-Sim\n2-Não");
 

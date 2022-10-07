@@ -1,0 +1,22 @@
+section{
+    border: 3px solid #f00;
+    height: 200px;
+    display: flex; /* contâiner flexivel*/
+    min-width: 500px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-wrap: wrap; /*quebra de linha dos contidos*/
+    justify-content: center;/*alinhamento horizontal centraliza conteúdo no centro*/
+    /* flex-end / flex-start*/
+
+    align-items: center;
+   /*alinhamento vertical dos elementos*/
+}
+div{
+    border: 1px solid #000;
+    margin-left: 20px;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    
+}

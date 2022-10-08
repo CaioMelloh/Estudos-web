@@ -1,3 +1,30 @@
+
+function exibirMenu(){
+    let escolha
+    do
+    {
+        escolha = prompt("Qual ação você gostaria de realizar?\n1-Acelerar 5km/s\n2-Desacelerar 5km/s\n3-Imprimir dados de bordo\n4-Sair do programa")
+        
+        switch(escolha){
+            case "1":
+                acelerar()
+                break;
+            case "2":
+                desacelerar()
+                break;
+            case "3":
+                imprimir()
+                break
+            case "4":
+                sairPrograma()
+                break;
+            default:
+                alert("Mensagem não conhecida, digite o menu novamente!")
+        }
+    }while(escolha != "4")
+    
+}
+
 function acelerar(){
     velocity+= 5
 
@@ -25,31 +52,6 @@ function sairPrograma(){
 
 }
 
-function exibirMenu(){
-    let escolha
-    do
-    {
-        escolha = prompt("Qual ação você gostaria de realizar?\n1-Acelerar 5km/s\n2-Desacelerar 5km/s\n3-Imprimir dados de bordo\n4-Sair do programa")
-        
-        switch(escolha){
-            case "1":
-                acelerar()
-                break;
-            case "2":
-                desacelerar()
-                break;
-            case "3":
-                imprimir()
-                break
-            case "4":
-                sairPrograma()
-                break;
-            default:
-                alert("Mensagem não conhecida, digite o menu novamente!")
-        }
-    }while(escolha != "4")
-    
-}
 
 let spaceshipName = prompt("QUal o nome da sua nave?")
 

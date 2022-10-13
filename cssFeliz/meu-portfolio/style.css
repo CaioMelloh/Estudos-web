@@ -1,0 +1,29 @@
+header{
+    background-color:#7C5E99;
+    height: 80px;
+}
+nav{
+    display:inline-block;
+}
+img{
+    height: 70px;
+    width: 73px;
+    border-radius: 100%;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Fira Code', monospace;
+    margin-right: 30px;
+
+}
+#button{
+    background-color: #F25A70;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 500px;
+    box-shadow: 5px 5px #000;
+    width: 170px;
+    height: 60px;
+}

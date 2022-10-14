@@ -1,0 +1,1 @@
+Math.ceil() /*arredonda o número para cima*/

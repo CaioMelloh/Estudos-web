@@ -30,13 +30,15 @@ function backDoorPassword(nome){
 /*3.
 Implementar a função backDoorResponse que pega uma linha do poema como argumento e retorna a última 
 letra dessa linha que não é um personagem do espaço em branco*/
-let line = "Olai ";
+function backDoorResponse(line) {
 
-let newWord = line.trim();
+    let newWord = line.trim();
 
-let formatLetter = newWord.slice((newWord.length - 1), newWord.length);
+    let formatLetter = newWord.slice((newWord.length - 1), newWord.length);
 
-console.log(formatLetter);
+    return formatLetter;
+
+}
 
 /*4.Para entrar no clube de poesia pela porta dos fundos, você precisa ser educado. 
 Portanto, para derivar a senha, desta vez você precisa capitalizar corretamente a palavra e adicionar 

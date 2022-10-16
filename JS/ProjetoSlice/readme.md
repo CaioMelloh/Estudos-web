@@ -1,0 +1,1 @@
+###Esse é um pequeno projeto que realizei envolvendo alguns conhecimentos básicos de DOM e treinando não só funções como também o método das strings, especificamente o slice(), que permite dividir partes de um string sem modifica-lo.

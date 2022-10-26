@@ -1,9 +1,9 @@
 
 
 const hitchedSpaceships = [
-    ["Fenix", 8, true],
+    ["Fenix", 8, true], /* no for equivale a array[i] /na função equivale a simplesmente array*/
     ["Golias", 10, true],
-    ["Helmet", 5, false],
+    ["Helmet", 5, false], /*ele percorre naturalmente os elementos da camada*/
     ["Elemental", 3, true],
     ["Darwin", 15, false]
 ];
@@ -23,6 +23,9 @@ function filter(array){
 
 /*filter(hitchedSpaceships);*/
 
+/*-----------------------------------------------------------*/
+
+
 /*Informar o número da plataforma 
  em que está a primeira
 nave que ainda está com engate pendente
@@ -31,19 +34,22 @@ parecida com o find, mas retorna
 o índice  de um filtro em vez do
  elemento do Array*/
 
-function engatePendente(array){
-    for(let i = 0; i<array.length; i++){
-        for(let j = 2; j<array[i].length; j++){
-            if(array[i][j] == false)
-            {
-                
-                return array[i][j];
+function buscador(array){
+   for(let j = 0; j<array.length; j++){
+
+            if(array[j] == false){
+                return true;
             }
-        }
-        return 0;
-    }
    
+   }
 }
 
+    function plataforma(array){
 
-console.log(engatePendente(hitchedSpaceships));
+        console.log(array.findIndex(buscador) + 1);
+
+    }
+
+    plataforma(hitchedSpaceships);
+/* o buscador irá percorrer todos os elementos do hitchedSpaceship*/
+

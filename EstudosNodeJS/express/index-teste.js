@@ -8,5 +8,5 @@ app.listen(3001, (req, resp) =>{
 
 app.get('/curso/:nome', (req, resp) =>{
    const nome = req.params.nome;
-    return resp.json({Aprendendo: `${nome}`});
+    return resp.send(`Aprendendo com o ${nome}`);
 })

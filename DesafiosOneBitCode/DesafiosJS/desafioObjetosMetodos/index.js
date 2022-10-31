@@ -8,27 +8,27 @@ let nave = {
     velocidadeMax: 0,
     acelerar: function(){
         let quantidade = prompt("O quanto você gostaria de acelerar? Velocidade atual : "+this.velocidade);
-        if(this.velocidade > 0){
-            this.velocidade+= quantidade;
-            verificarVelocidade(this.velocidade, this.velocidadeMax);
-        }
-        this.velocidade = quantidade;
-        
+        quantidade = Number(quantidade);
+        verificarVelocidade(this.velocidade, this.velocidadeMax, quantidade);
+      
         
     },
     parar: function(){
-        
+        alert("O nome da nave é "+this.nome+"\nO tipo da nave é: "+this.tipo+"\nSua velocidade atual era de "+this.velocidade+"m/s");
     },
     
     action: function(){
-        let question = prompt("Você gostaria de acelerar ou parar? A / P");
-        if(question == 'A'){
-            this.acelerar();
-        }
-        else if(question == 'P'){
-            this.parar();
-        }
-        else{console.log("Opção inválida!");}
+        let question;
+        do{
+            question = prompt("Você gostaria de acelerar ou parar? A / P");
+            if(question == 'A' || question == 'a'){
+                this.acelerar();
+            }
+            else if(question == 'P' || question == 'p'){
+                this.parar();
+            }
+            else{console.log("Opção inválida!");}
+        }while(question != 'P');
 
     },
     cadastro: function(){
@@ -42,9 +42,14 @@ let nave = {
 
 }
 
-function verificarVelocidade(velocidade, velocidadeMax){
-    if(velocidade >= velocidadeMax){
+/*OK*/
+function verificarVelocidade(velocidade, velocidadeMax, quantidade){
+    if(velocidade + quantidade >= velocidadeMax ){
         alert("Velocidade máxima atingida!");
+        nave.velocidade = 60;                 /*testar o loop de aceleração e retardo da próxima vez*/
+    }
+    else{
+        nave.velocidade+= quantidade;
     }
 }
 

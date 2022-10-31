@@ -12,34 +12,68 @@ Implementar uma função birdsInWeek que aceita uma variedade de contagens de p�
 birdsInWeek(birdsPerDay, 2);
 // => 12
  */
-let birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1];
 
-
-
-function birdsInWeek(birdsPerDay, num){
-    let i = 0;
-    switch(num){
-        case 1:
-            i = 0;
-            break;
-        case 2:
-            i = 7;
-            break;
-        case 3:
-            i = 14;
-            break;
-        case 4:
-            i = 21;
-            break;    
+let birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1, 4, 5, 6, 2, 4, 6, 4];
+function analise(array, week){
+    let result = 0;
+    let position = 7 * week - 1;
+    for(let i = position; i>position - 7; i--){
+    result += array[i];
     }
-
-    const p = i;
-    let sum = 0;
-    
-    for(i; i< (p + 7); i++){
-        sum += birdsPerDay[i];
-    }
-    return sum
+    return result;
 }
 
-console.log(birdsInWeek(birdsPerDay, 2));
+console.log(analise(birdsPerDay, 3));
+
+
+console.log(1 % 2 == 0);
+
+
+
+
+  let novo = birdsPerDay.map((array) => {
+    for(let i = 0; i< array.length; i++){
+      if(i % 2 == 0){
+            array[i]+= 1; 
+        }
+    }
+  });
+
+  console.log(novo);
+
+
+//   for(let i = 0; i< birdsPerDay.length; i++){
+//     if(i % 2 == 0){
+//           birdsPerDay[i] = birdsPerDay[i] + 1;      
+//       }
+//     else{
+//       birdsPerDay[i] = birdsPerDay[i];
+//     }
+//   }
+//   return birdsPerDay;
+/*2*/
+// let result = 0;
+// let position = 7 * week - 1;
+// for(let i = position; i>position - 7; i--){
+//   result += birdsPerDay[i];
+// }
+// return result;
+
+/*1*/
+// let count = 0;
+// for(let i = 0; i<birdsPerDay.length; i++){
+//   count+= birdsPerDay[i];
+// }
+// return count;
+
+/*3*/
+ 
+// for(let i = 0; i< birdsPerDay.length; i++){
+//     if(i % 2 == 0){
+//           birdsPerDay[i] = birdsPerDay[i] + 1;      
+//       }
+//     else{
+//       birdsPerDay[i] = birdsPerDay[i];
+//     }
+//   }
+//   return birdsPerDay;

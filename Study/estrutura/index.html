@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #f012;
+        }
+        #cabecalho{
+            background-color: #00f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #especial{
+            color:#00f;
+            text-align: center;
+        }
+        /*o id se sobrepõe ao class mesmo vindo após o id*/
+        .textos{
+            color: #ff0;
+        }
+        .textospequenos{
+            color: rgb(117, 17, 17);
+        }
+        footer{
+            background-color: #000;
+            color: #fff;
+            height: 80px;
+            position:absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 80px;
+            bottom: 0;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Teste</h1>
+    <header id="cabecalho">
+        <h1 class="textos">Teste</h1>
+        <p>Bem-vindo ao nosso mundo!</p>
+    </header>
+    
+    <section>
+        <h2 class="textospequenos" id="especial">Especial</h2>
+        <h2 class="textospequenos">Teste 2</h2>
+        <h2 class="textospequenos">Teste 3</h2>
+        <h2 class="textospequenos">Teste 4</h2>
+    </section>
+
+    <footer>
+        <p>Criado por Caio Mello</p>
+    </footer>
 </body>
 </html>

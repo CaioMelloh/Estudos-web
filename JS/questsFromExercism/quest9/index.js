@@ -58,35 +58,28 @@ O tempo restante no turno será sempre maior que 0. Além disso, os
     o tempo restante da bebida, se o tempo (5 - 1,5 = 3,5)
     em seguida ele verifica se o 
 */
-    let drinks = ['Energizer', 'All or Nothing', 'Green Garden']
+    let drinks = ['Energizer', 'All or Nothing', 'Green Garden', 'Tropical Island']
 
-   function remainingOrders(leftMinutes, drink){
-        let minutes = leftMinutes;
-        let i = 0;
-        let newArray = drink;
-        console.log(newArray)
-        do{
-            let leftTime;
-            // if(minutes <= 0){
-            //     return new Array();
-            // }
+    function remainingOrders(timeLeft, orders) {
+      let minutes = timeLeft;
+      let i = 0;
+      let novo = orders.map((x) => x);
+      
+      do{
+          let restTime;
+          restTime = timeToMixJuice(orders[i]);
+          console.log(restTime); 
+          novo.shift();
+          i++;
+      
 
-            leftTime = timeToMixJuice(drink[i]); /*bug all or nothing não retorna 5, acab retornando 1.5*/
-            newArray.shift();
-            console.log(newArray)
-           i++;
-
-           minutes-= leftTime 
-           console.log(leftTime);
-           console.log(minutes);
-          
-        }while(minutes > 0)
-        
-        if(i == drink.length){
-            return new Array();
-        }
-        return newArray;
-   }
+         minutes-= restTime;
+      
+      }while(minutes > 0)
+   
+        return novo;
+  
+ }
 
 
 

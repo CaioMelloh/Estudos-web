@@ -24,6 +24,15 @@ class Pirata{
 
 let mugiwaraNakama1 = new Pirata("Chooper", 50);
 
-console.log(mugiwaraNakama1);
 
 
+class abelha {
+    constructor(cor, especie){
+        this.cor = cor;
+        this.especie = especie;
+    }
+}
+
+let nup = new abelha("amarela", "Africana");
+
+console.log(nup);
